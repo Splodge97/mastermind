@@ -5,6 +5,37 @@ android:versionCode="1“
 android:versionName="1.0“
 android:installLocation="preferExternal"
 package=" mastermind.splodge97.edu.mit.scratch ">
+<application android:allowTaskReparenting=["true"]
+             android:allowBackup=["true"]
+             android:allowClearUserData=["true"]
+             android:backupAgent="mastermind.splodge97.edu.mit.scratch.MyBackupAgent"
+             android:backupInForeground=["false"]
+             android:banner="drawable resource"
+             android:debuggable=["false"]
+             android:description="description"
+             android:directBootAware=["false"]
+             android:enabled=["true"]
+             android:extractNativeLibs=["true"]
+             android:fullBackupOnly=["false"]
+             android:hasCode=["true"]
+             android:hardwareAccelerated=["true"]
+             android:icon="icon.png"
+             android:isGame=["true"]
+             android:killAfterRestore=["true"]
+             android:largeHeap=["false"]
+             android:label="mastermind.splodge97.edu.mit.scratch"
+             android:logo="icon.png"
+             android:name="mastermind"
+             android:networkSecurityConfig="xml resource"
+             android:permission="WRITE_EXTERNAL_STORAGE"
+             android:persistent=["false"]
+             android:restoreAnyVersion=["false"]
+             android:requiredAccountType="null"
+             android:resizeableActivity=["false"]
+             android:restrictedAccountType="null"
+             android:supportsRtl=["true"]
+             android:testOnly=["false"]
+       </application>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
-<uses-sdk android:minSdkVersion="15“ android:targetSdkVersion="26" />
+<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26" />
 </manifest>
