@@ -1,0 +1,110 @@
+<HTML>
+    <head>
+        <title> Mastermind </title>
+    </head>
+
+    <body>
+        <button onclick="B()" style="background-color:blue;color:blue;">B</button> <button onclick="G()" style="background-color:green;color:green;">G</button> <button onclick="O()" style="background-color:orange;color:orange;">O</button> <button onclick="P()" style="background-color:purple;color:purple;">P</button> <button onclick="R()" style="background-color:red;color:red;">R</button> <button onclick="Y()" style="background-color:yellow;color:yellow;">Y</button>
+        <button onclick="YES()">&#10004;</button> <button onclick="NO()">&#10060;</button> <br><br>
+        <button id="A">&#9658;</button> <button id="A1"> </button> <button id="A2"> </button> <button id="A3"> </button> <button id="A4"> </button> <button id="A.5">.</button> <button id="A.6">.</button> <button id="A.7">.</button> <button id="A.8">.</button> <br><br>            
+        <button id="B">&#9658;</button> <button id="B1"> </button> <button id="B2"> </button> <button id="B3"> </button> <button id="B4"> </button> <button id="B.5">.</button> <button id="B.6">.</button> <button id="B.7">.</button> <button id="B.8">.</button> <br><br>            
+        <button id="C">&#9658;</button> <button id="C1"> </button> <button id="C2"> </button> <button id="C3"> </button> <button id="C4"> </button> <button id="C.5">.</button> <button id="C.6">.</button> <button id="C.7">.</button> <button id="C.8">.</button> <br><br>            
+        <button id="D">&#9658;</button> <button id="D1"> </button> <button id="D2"> </button> <button id="D3"> </button> <button id="D4"> </button> <button id="D.5">.</button> <button id="D.6">.</button> <button id="D.7">.</button> <button id="D.8">.</button> <br><br>            
+        <button id="E">&#9658;</button> <button id="E1"> </button> <button id="E2"> </button> <button id="E3"> </button> <button id="E4"> </button> <button id="E.5">.</button> <button id="E.6">.</button> <button id="E.7">.</button> <button id="E.8">.</button> <br><br>            
+        <button id="F">&#9658;</button> <button id="F1"> </button> <button id="F2"> </button> <button id="F3"> </button> <button id="F4"> </button> <button id="F.5">.</button> <button id="F.6">.</button> <button id="F.7">.</button> <button id="F.8">.</button> <br><br>            
+        <button id="G">&#9658;</button> <button id="G1"> </button> <button id="G2"> </button> <button id="G3"> </button> <button id="G4"> </button> <button id="G.5">.</button> <button id="G.6">.</button> <button id="G.7">.</button> <button id="G.8">.</button> <br><br>            
+        <button id="H">&#9658;</button> <button id="H1"> </button> <button id="H2"> </button> <button id="H3"> </button> <button id="H4"> </button> <button id="H.5">.</button> <button id="H.6">.</button> <button id="H.7">.</button> <button id="H.8">.</button> <br><br>            
+        <button id="I">&#9658;</button> <button id="I1"> </button> <button id="I2"> </button> <button id="I3"> </button> <button id="I4"> </button> <button id="I.5">.</button> <button id="I.6">.</button> <button id="I.7">.</button> <button id="I.8">.</button> <br><br>            
+        <button id="J">&#9658;</button> <button id="J1"> </button> <button id="J2"> </button> <button id="J3"> </button> <button id="J4"> </button> <button id="J.5">.</button> <button id="J.6">.</button> <button id="J.7">.</button> <button id="J.8">.</button> <br><br>
+        <button onclick="Reset()">New Game</button>
+        <script>
+        var spot = 1; var row = "A"; position = row + spot
+        var Answer1 = 1
+        var Answer2 = 2
+        var Answer3 = 3
+        var Answer4 = 4
+        var Guess1 = 0; var Guess2 = 0; var Guess3 = 0; var Guess4 = 0;
+        var black = 0; var grey = 0;
+        function B(){document.getElementById(position).style="background-color:blue;color:blue;"
+                    document.getElementById(position).innerHTML="B";
+                    if(spot==1){Guess1=1}
+                    else if(spot==2){Guess2=1}
+                    else if(spot==3){Guess3=1}
+                    else if(spot==4){Guess4=1}
+                    spot+=1; position = row + spot }
+        function G(){document.getElementById(position).style="background-color:green;color:green;"
+                    document.getElementById(position).innerHTML="G";
+                    if(spot==1){Guess1=2}
+                    else if(spot==2){Guess2=2}
+                    else if(spot==3){Guess3=2}
+                    else if(spot==4){Guess4=2}
+                    spot+=1; position = row + spot }
+        function O(){document.getElementById(position).style="background-color:orange;color:orange;"
+                    document.getElementById(position).innerHTML="O";
+                    if(spot==1){Guess1=3}
+                    else if(spot==2){Guess2=3}
+                    else if(spot==3){Guess3=3}
+                    else if(spot==4){Guess4=3}
+                    spot+=1; position = row + spot }
+        function P(){document.getElementById(position).style="background-color:purple;color:purple;"
+                    document.getElementById(position).innerHTML="P";
+                    if(spot==1){Guess1=4}
+                    else if(spot==2){Guess2=4}
+                    else if(spot==3){Guess3=4}
+                    else if(spot==4){Guess4=4}
+                    spot+=1; position = row + spot }
+        function R(){document.getElementById(position).style="background-color:red;color:red;"
+                    document.getElementById(position).innerHTML="R";
+                    if(spot==1){Guess1=5}
+                    else if(spot==2){Guess2=5}
+                    else if(spot==3){Guess3=5}
+                    else if(spot==4){Guess4=5}
+                    spot+=1; position = row + spot }
+        function Y(){document.getElementById(position).style="background-color:yellow;color:yellow;"
+                    document.getElementById(position).innerHTML="Y";
+                    if(spot==1){Guess1=6}
+                    else if(spot==2){Guess2=6}
+                    else if(spot==3){Guess3=6}
+                    else if(spot==4){Guess4=6}
+                    spot+=1; position = row + spot }
+        function NO(){position=row+1; document.getElementById(position).style="initial";
+                        document.getElementById(position).innerHTML="";
+                    position=row+2; document.getElementById(position).style="initial";
+                        document.getElementById(position).innerHTML="";
+                    position=row+3; document.getElementById(position).style="initial";
+                        document.getElementById(position).innerHTML="";
+                    position=row+4; document.getElementById(position).style="initial";
+                        document.getElementById(position).innerHTML="";
+                    spot=1; position=row+spot}
+        function YES(){if(Answer1==Guess1){black+=1}
+                            else if(Answer1==Guess2||Answer1==Guess3||Answer1==Guess4){grey+=1}
+                        if(Answer2==Guess2){black+=1}
+                            else if(Answer2==Guess1||Answer2==Guess3||Answer2==Guess4){grey+=1}
+                        if(Answer3==Guess3){black+=1}
+                            else if(Answer3==Guess1||Answer3==Guess2||Answer3==Guess4){grey+=1}
+                        if(Answer4==Guess4){black+=1}
+                            else if(Answer4==Guess1||Answer4==Guess2||Answer4==Guess3){grey+=1}
+                        if(black==4){alert("You Win!")} 
+                        if(black>=1){document.getElementById(row+".5").innerHTML= '&#9679;'}
+                            else if(black+grey>=1){document.getElementById(row+".5").innerHTML= '&#9675;'}
+                        if(black>=2){document.getElementById(row+".6").innerHTML= '&#9679;'}
+                            else if(black+grey>=2){document.getElementById(row+".6").innerHTML= '&#9675;'}
+                        if(black>=3){document.getElementById(row+".7").innerHTML= '&#9679;'}
+                            else if(black+grey>=3){document.getElementById(row+".7").innerHTML= '&#9675;'}
+                        if(black+grey>=4){document.getElementById(row+".8").innerHTML= '&#9675;'}
+                        if(row=="A"){row="B"}
+                            else if(row=="B"){row="C"}
+                            else if(row=="C"){row="D"}
+                            else if(row=="D"){row="E"}
+                            else if(row=="E"){row="F"}
+                            else if(row=="F"){row="G"}
+                            else if(row=="G"){row="H"}
+                            else if(row=="H"){row="I"}
+                            else if(row=="I"){row="J"}
+                            else if(row=="J"){row="K"; alert("You Lose.")}
+                        spot=1; position = row + spot;
+                        black = 0; grey = 0 }
+            function Reset(){location.reload() }
+        </script>
+    </body>
+</html> 
