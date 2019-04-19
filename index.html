@@ -18,11 +18,11 @@
         <button id="J">&#9658;</button> <button id="J1"> </button> <button id="J2"> </button> <button id="J3"> </button> <button id="J4"> </button> <button id="J.5">.</button> <button id="J.6">.</button> <button id="J.7">.</button> <button id="J.8">.</button> <br><br>
         <button onclick="Reset()">New Game</button>
         <script>
-        var spot = 1; var row = "A"; position = row + spot
-        var Answer1 = 1
-        var Answer2 = 2
-        var Answer3 = 3
-        var Answer4 = 4
+        var spot = 1; var row = "A"; position = row + spot;
+        var Answer1 = Math.floor(Math.random()*6)+1;
+        var Answer2 = Math.floor(Math.random()*6)+1;
+        var Answer3 = Math.floor(Math.random()*6)+1;
+        var Answer4 = Math.floor(Math.random()*6)+1;
         var Guess1 = 0; var Guess2 = 0; var Guess3 = 0; var Guess4 = 0;
         var black = 0; var grey = 0;
         function B(){document.getElementById(position).style="background-color:blue;color:blue;"
