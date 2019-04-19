@@ -4,8 +4,6 @@
         id          = "title.splodge97.edu.mit.scratch"
         versionCode = "10" 
         version     = "1.0.0" >
- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
- <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26" />
     <name>mastermind</name>
     <description>
 The board game to break the hidden code.
