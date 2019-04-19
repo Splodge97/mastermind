@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "title.splodge97.edu.mit.scratch"
+        versionCode = "10" 
+        version     = "1.0.0" >
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+ <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26" />
+    <name>mastermind</name>
+    <description>
+The board game to break the hidden code.
+    </description>
+    <author href="http://scratch.mit.edu/users/splodge97" email="sophie.rose.cz@gmail.com">
+        splodge97
+    </author>
+        <icon src="icon.png"/>
+</widget>
