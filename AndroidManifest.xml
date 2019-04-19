@@ -5,5 +5,6 @@ android:versionCode="1“
 android:versionName="1.0“
 android:installLocation="preferExternal"
 package=" mastermind.splodge97.edu.mit.scratch ">
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
 <uses-sdk android:minSdkVersion="15“ android:targetSdkVersion="26" />
 </manifest>
