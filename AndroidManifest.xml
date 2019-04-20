@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding=" UTF-8" ?> 
 <manifest
           xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
           android:versionCode="1"
           android:versionName="1.0"
-          package="mastermind.splodge97.edu.mit.scratch">
-<intent-filter>
-         <action android:name="android.intent.action.MAIN"/>
-         <category android:name="android.intent.category.LAUNCHER"/>
-</intent-filter>
-<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-<uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-</uses-permission>
+          package="mastermind.splodge97.edu.mit.scratch"
+          android:installLocation="auto">
+<uses-sdk android:minSdkVersion="7" />
 </manifest>
