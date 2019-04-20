@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding=" UTF-8" ?> 
 <manifest
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:versionCode="1“
-android:versionName="1.0“
-android:installLocation="auto"
-package=" mastermind.splodge97.edu.mit.scratch ">
-<uses-sdk  
- android:targetSdkVersion="27" 
- android:minSdkVersion ="14"/>
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:versionCode="1"
+          android:versionName="1.0"
+          package="mastermind.splodge97.edu.mit.scratch">
+<intent-filter>
+         <action android:name="android.intent.action.MAIN"/>
+         <category android:name="android.intent.category.LAUNCHER"/>
+</intent-filter>
+<uses-sdk
+          android:targetSdkVersion="27" 
+          android:minSdkVersion ="14"/>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 </uses-permission>
 </manifest>
